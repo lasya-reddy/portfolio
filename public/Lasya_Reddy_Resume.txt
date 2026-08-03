@@ -1,0 +1,30 @@
+Lasya Reddy
+Computer Science Engineering Student
+Email: lasya@example.com
+Phone: +91-0000000000
+Location: Hyderabad, Telangana, India
+
+Summary
+Highly motivated Computer Science student with strong interest in software development, AI, backend systems, and product building. Experienced in Java, Python, SQL, and web technologies with a track record of academic projects, technical leadership, and problem-solving.
+
+Skills
+Programming: Java, Python, SQL, C, C++
+Web/Backend: Node.js, REST APIs, Firebase
+AI/ML: Machine Learning Basics, NLP, Pandas, NumPy, Scikit-learn
+Tools: Git, GitHub, Power BI, Figma, VS Code, IntelliJ, PyCharm, AWS
+
+Projects
+- Intelligent Scheduling for Railway Throughput
+- Fake Review Detection
+- Blind Specs
+
+Certifications
+- NPTEL Cloud Computing (Elite)
+- Java Programming – Great Learning
+- ServiceNow CAD
+- Scaler DBMS and Operating Systems
+
+Achievements
+- 5★ Java on HackerRank
+- 3★ SQL on HackerRank
+- 70+ coding problems solved

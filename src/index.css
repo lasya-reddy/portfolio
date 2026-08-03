@@ -1,0 +1,70 @@
+:root {
+  font-family: 'Clash Display', 'Space Grotesk', Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f4f7fb;
+  background-color: #080808;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --accent: #00e676;
+  --accent-strong: #30b56c;
+  --accent-soft: rgba(0, 230, 118, 0.14);
+  --text-main: #eef4ff;
+  --text-muted: #a3b0c4;
+  --surface: rgba(18, 24, 42, 0.88);
+  --surface-soft: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(0, 230, 118, 0.08), transparent 18%),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.06), transparent 22%),
+    linear-gradient(180deg, #080808 0%, #050608 52%, #070b10 100%);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 10% 10%, rgba(0, 230, 118, 0.08), transparent 18%),
+    radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.08), transparent 16%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03), transparent 50%, rgba(255, 255, 255, 0.03));
+  opacity: 0.48;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: auto auto 0 0;
+  width: 100%;
+  height: 150px;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.4));
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
