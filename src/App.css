@@ -407,17 +407,40 @@ a {
 }
 
 .hero-portrait {
-  width: 240px;
-  height: 240px;
+  width: 380px;
+  height: 380px;
   border-radius: 32px;
-  display: grid;
-  place-items: center;
-  font-size: 4rem;
-  font-weight: 800;
-  color: #eef4ff;
-  background: linear-gradient(135deg, rgba(0, 230, 118, 0.95), rgba(0, 98, 132, 0.95));
-  box-shadow: 0 30px 70px rgba(0, 230, 118, 0.18);
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 36px 90px rgba(0, 230, 118, 0.18);
   z-index: 1;
+  background: none;
+  color: inherit;
+}
+
+/* When `.hero-portrait` is an image, preserve aspect ratio and cover the frame */
+.hero-portrait[src] {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive sizing for smaller screens */
+@media (max-width: 1000px) {
+  .hero-portrait,
+  .hero-portrait[src] {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-portrait,
+  .hero-portrait[src] {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .hero-portrait-label {
@@ -497,16 +520,26 @@ a {
 
 .profile-sillhouette {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   border-radius: 30px;
-  background: linear-gradient(135deg, #0c1a2d 0%, rgba(0, 230, 118, 0.15) 100%);
-  display: grid;
-  place-items: center;
-  font-size: 3.4rem;
-  font-weight: 800;
-  color: #eef4ff;
+  overflow: hidden;
+  display: block;
+  background: linear-gradient(135deg, #0c1a2d 0%, rgba(0, 230, 118, 0.12) 100%);
   border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* If `.profile-sillhouette` is an image, make it cover the frame */
+.profile-sillhouette[src],
+.profile-sillhouette {
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .profile-sillhouette {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .profile-copy p {

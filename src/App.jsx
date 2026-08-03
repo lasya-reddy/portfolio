@@ -183,11 +183,10 @@ function App() {
 
           <div className="hero-visual interactive">
             <div className="hero-visual-glow" />
-            <div className="hero-visual-frame">
-              <div className="hero-visual-shine" />
-              <div className="hero-portrait">LR</div>
-              <div className="hero-portrait-label">Startup Founder</div>
-            </div>
+              <div className="hero-visual-frame">
+                <div className="hero-visual-shine" />
+                <img className="hero-portrait" src="/images/hero.png" alt="Lasya Reddy" />
+              </div>
             <div className="hero-particles">
               {[...Array(6)].map((_, index) => (
                 <span key={index} className={`particle particle-${index + 1}`} />
@@ -206,7 +205,7 @@ function App() {
             <article className="glass-panel about-profile interactive">
               <div className="profile-visual">
                 <div className="profile-glow" />
-                <div className="profile-sillhouette">LR</div>
+                <img className="profile-sillhouette" src="/images/photo2.png" alt="Lasya Reddy" />
               </div>
               <div className="profile-copy">
                 <p>
